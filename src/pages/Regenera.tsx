@@ -1,28 +1,26 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImg from "@/assets/hero-regenera.jpg";
+
+const heroImg = "https://sahajlandell.com.br/wp-content/uploads/2024/10/20240907_113413-scaled.jpg";
 
 const Regenera = () => (
   <ServicePageLayout
     heroImage={heroImg}
-    subtitle="Masculinidades Conscientes"
+    subtitle="Grupo de Homens"
     title="Regenera"
-    coloredSubtitle="Um espaço de acolhimento e transformação para homens que desejam se reconectar com sua essência."
+    coloredSubtitle="Expedição das Masculinidades"
     description={[
-      "O Regenera Masculinidades é um programa voltado para homens que buscam uma relação mais saudável e consciente com sua masculinidade. Em um espaço seguro e livre de julgamentos, os participantes são convidados a explorar suas vulnerabilidades, emoções e padrões de comportamento.",
-      "Vivemos em uma cultura que ensina os homens a reprimir suas emoções, ser fortes o tempo todo e evitar a vulnerabilidade. O Regenera propõe um caminho diferente — um espaço onde ser homem inclui sentir, chorar, pedir ajuda e se conectar genuinamente com outros homens.",
-      "Através de encontros regulares que combinam roda de conversa, exercícios bioenergéticos e dinâmicas vivenciais, os participantes desenvolvem uma nova relação com suas emoções e com o que significa ser homem no mundo contemporâneo.",
+      "Te convido para um espaço de reflexão e movimento sobre a importância de novas formas de masculidades existirem e serem afirmadas nos dias atuais.",
+      "Uma das ações do Regenera é um grupo mensal de homens coordenado por mim e outros homens na Casa Örüm, em Florianópolis. Masculinidades referem-se às diversas formas de ser e expressar a masculinidade, que podem variar de acordo com contextos culturais, sociais, históricos e individuais. Em vez de uma única definição, as masculinidades englobam uma gama de comportamentos, atitudes e identidades que os homens podem assumir. Não existe um único modelo de masculinidade, mas sim uma complexa rede de identidades que se influenciam mutuamente e que podem ser desconstruídas para promover relações mais igualitárias e saudáveis.",
     ]}
     benefits={[
-      "Reconexão com emoções reprimidas",
-      "Desenvolvimento de vulnerabilidade saudável",
-      "Construção de vínculos masculinos autênticos",
-      "Revisão de padrões tóxicos de masculinidade",
-      "Melhoria nos relacionamentos afetivos",
-      "Fortalecimento da saúde mental",
+      "Oportunidade de auto-reflexão: nossos grupos oferecem um ambiente seguro e acolhedor onde você pode refletir sobre suas próprias experiências e crenças em relação às masculinidades",
+      "Juntos fazemos a diferença: junte-se a uma comunidade de homens que compartilham o compromisso de desconstruir a masculinidade tóxica e machista, criando laços de solidariedade e fortalecimento",
+      "Crescimento pessoal: através de reflexões e dinâmicas, incentivamos o autoconhecimento e o desenvolvimento pessoal",
+      "Novas experiências de sentir e refletir o mundo: aqui, questionamos e refletimos sobre os malefícios do patriarcado, promovendo uma masculinidade saudável e inclusiva",
     ]}
     quote={{
-      text: "A verdadeira força de um homem está na coragem de sentir.",
-      author: "Sahaj Landell",
+      text: "Não se nasce homem: torna-se homem.",
+      author: "Simone de Beauvoir",
     }}
   />
 );

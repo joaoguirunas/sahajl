@@ -1,29 +1,25 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImg from "@/assets/hero-bioenergetica.jpg";
+
+const heroImg = "https://sahajlandell.com.br/wp-content/uploads/2024/12/DSC03111-scaled.jpg";
 
 const TerapiaCorporal = () => (
   <ServicePageLayout
     heroImage={heroImg}
-    subtitle="Análise Bioenergética"
+    subtitle="Psicoterapia Corporal Bioenergética"
     title="Terapia Corporal Bioenergética"
-    coloredSubtitle="Liberação de tensões acumuladas no corpo, conectando emoções e desbloqueando a energia vital."
+    coloredSubtitle="Liberte suas emoções, recupere sua energia e viva as dimensões entre o pensar, sentir e expressar na vida de forma mais integrada"
     description={[
-      "A Análise Bioenergética é uma abordagem psicoterapêutica que integra corpo e mente no processo de cura emocional. Desenvolvida por Alexander Lowen, essa metodologia entende que nossas emoções, traumas e experiências de vida ficam registrados no corpo sob a forma de tensões musculares crônicas.",
-      "Através de exercícios corporais específicos, técnicas de respiração e trabalho com expressão emocional, a terapia bioenergética permite acessar e liberar emoções reprimidas, restaurando o fluxo natural de energia vital.",
-      "O corpo não mente — ele carrega nossa história. Ao trabalhar diretamente com as tensões corporais, conseguimos acessar camadas profundas da experiência emocional que muitas vezes não são alcançadas apenas pela palavra.",
+      "A Técnica de terapia Bioenergética, desenvolvida a partir das ideias de Wilhelm Reich e sistematizada pelo psicanalista norte-americano Alexander Lowen, utiliza exercícios e movimentos sincronizados com a respiração para ativar sua energia vital. Bioenergética significa energia da vida. Durante esses exercícios, sua energia se movimenta pelo corpo e encontra obstáculos emocionais, que foram acumulados ao longo da vida. Ao liberar essas emoções presas, você não precisa gastar mais energia para segurá-las, resultando em mais vitalidade, alegria, amor e uma vida sexual mais saudável.",
     ]}
     benefits={[
-      "Liberação de tensões musculares crônicas",
-      "Aumento da vitalidade e energia",
-      "Conexão profunda entre corpo e emoções",
-      "Melhoria da respiração e presença corporal",
-      "Resolução de bloqueios emocionais antigos",
-      "Maior capacidade de sentir prazer e alegria",
-      "Fortalecimento do grounding (enraizamento)",
+      "Mais energia e alegria: libere emoções reprimidas e redescubra a alegria e vitalidade em sua vida cotidiana",
+      "Melhora da depressão: através da expressão das emoções o corpo se auto regula, alivia os sintomas de depressão e proporciona bem-estar",
+      "Redução da ansiedade: ansiedade é uma sensação trágica do futuro. Quanto maior a conexão com seu corpo, a ansiedade perde força e promove uma vida mais equilibrada e saudável",
+      "Maior conexão com o prazer e sua energia sexual: restaure e resgate sua energia sexual, libido e o prazer da vida",
     ]}
     quote={{
-      text: "O corpo é o inconsciente visível.",
-      author: "Wilhelm Reich",
+      text: "O corpo é um templo do autoconhecimento",
+      author: "Friedrich Nietzsche",
     }}
   />
 );

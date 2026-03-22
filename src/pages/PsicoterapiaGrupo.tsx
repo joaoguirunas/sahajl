@@ -1,28 +1,29 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImg from "@/assets/hero-grupo.jpg";
+
+const heroImg = "https://sahajlandell.com.br/wp-content/uploads/2024/12/DSC03113-scaled.jpg";
 
 const PsicoterapiaGrupo = () => (
   <ServicePageLayout
     heroImage={heroImg}
-    subtitle="Despertar do Movimento"
-    title="Psicoterapia em Grupo"
-    coloredSubtitle="Suporte compartilhado e orientação especializada para transformação pessoal e bem-estar."
+    subtitle="Psicoterapia em Grupo"
+    title="Despertar do Movimento"
+    coloredSubtitle="A dança como caminho para o autoconhecimento."
     description={[
-      "A psicoterapia em grupo oferece uma experiência única de crescimento pessoal através da troca com outros participantes. Em um ambiente seguro e acolhedor, cada integrante tem a oportunidade de se expressar, ser ouvido e reconhecido.",
-      "O grupo funciona como um espelho vivo das nossas relações, permitindo que padrões de comportamento sejam identificados e transformados com o suporte do coletivo. A experiência grupal potencializa o processo terapêutico ao oferecer múltiplas perspectivas e conexões autênticas.",
-      "Utilizamos técnicas de bioenergética, dinâmicas corporais e expressivas que facilitam a conexão entre corpo, mente e emoções, promovendo uma integração profunda do ser.",
+      "O movimento do corpo se torna uma poderosa ferramenta de escuta interna, permitindo que exploremos nossas emoções e conexões.",
+      "O Grupo de psicoterapia Despertar do Movimento é um trabalho terapêutico que amplia a consciência sobre como nos relacionamos com nossos sentimentos, com o corpo do outro e com o mundo ao nosso redor.",
+      "O que me move? Como me expresso? A proposta é investigar essas questões por meio de reflexões compartilhadas e práticas de movimento, aliadas a uma escuta atenta dos processos emocionais. Criamos um espaço afetivo que permite explorar áreas sensíveis de intimidade e confiança.",
+      "Através de dinâmicas de grupo, exercícios da Bioenergética e práticas de dança e contato improvisação convido os participantes a perceber e expressar as barreiras que bloqueiam seus movimentos e emoções. Essa expressão ajuda a resgatar a energia vital e a espontaneidade que é intrínseca a todos nós.",
     ]}
     benefits={[
-      "Desenvolvimento de habilidades sociais e comunicação",
-      "Senso de pertencimento e acolhimento",
-      "Diversidade de perspectivas e aprendizados",
-      "Prática de empatia e escuta ativa",
-      "Superação do isolamento emocional",
-      "Fortalecimento de vínculos autênticos",
+      "Aumento da consciência corporal e emocional",
+      "Investigação de padrões relacionais - o que sinto versos o que expresso",
+      "Espaço afetivo e seguro para expressar suas emoções",
+      "Resgatar sua espontaneidade e criatividade",
+      "Fortalecimento de vínculos",
     ]}
     quote={{
-      text: "Ninguém se cura sozinho. A cura acontece no encontro.",
-      author: "Sahaj Landell",
+      text: "O movimento expressa o que está dentro de nós; ao dançar, não apenas nos movemos, mas também nos tornamos conscientes de quem somos.",
+      author: "Rudolf Laban",
     }}
   />
 );

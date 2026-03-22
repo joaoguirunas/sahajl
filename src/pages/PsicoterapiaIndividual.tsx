@@ -1,29 +1,31 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImg from "@/assets/hero-psicoterapia.jpg";
+
+const heroImg = "https://sahajlandell.com.br/wp-content/uploads/2024/09/DSC02520-scaled.jpg";
 
 const PsicoterapiaIndividual = () => (
   <ServicePageLayout
     heroImage={heroImg}
-    subtitle="Psicoterapia"
+    subtitle="Apresento a"
     title="Psicoterapia Individual"
-    coloredSubtitle="Escuta qualificada e acolhedora para mais equilíbrio e desenvolvimento pessoal."
+    coloredSubtitle="Escuta acolhedora e qualificada"
     description={[
-      "A psicoterapia individual é um espaço seguro e confidencial onde você pode explorar seus sentimentos, pensamentos e comportamentos com o suporte de um profissional qualificado.",
-      "Através de uma escuta atenta e técnicas terapêuticas integradas — incluindo abordagens corporais, cognitivas e emocionais — trabalhamos juntos para identificar padrões que limitam seu crescimento e encontrar caminhos para uma vida mais plena.",
-      "Cada sessão é única e adaptada às suas necessidades, respeitando seu ritmo e suas particularidades. O processo terapêutico é uma jornada de autoconhecimento que pode trazer transformações profundas na forma como você se relaciona consigo mesmo e com o mundo.",
+      "Ofereço um ambiente seguro e empático para entender suas necessidades, desejos, sonhos, dores e ansiedades.",
+      "Abordagens terapêuticas diversificadas. Utilizo técnicas como a bioenergética e meditações ativas, além de recursos artísticos como dança, para promover a integração entre suas dimensões de ser.",
+      "Ajudo você a refletir sobre sua história pessoal, familiar e social, e os impactos dela na realização de seus objetivos de vida.",
+      "Atendimento personalizado. Análise de sua saúde emocional e energética para oferecer abordagens e ferramentas terapêuticas específicas para suas necessidades.",
     ]}
     benefits={[
-      "Autoconhecimento profundo e desenvolvimento pessoal",
-      "Gestão de ansiedade, estresse e sintomas depressivos",
-      "Melhoria nos relacionamentos interpessoais",
-      "Superação de traumas e bloqueios emocionais",
-      "Fortalecimento da autoestima e autoconfiança",
-      "Desenvolvimento de inteligência emocional",
-      "Clareza para tomada de decisões importantes",
+      "Autoconhecimento: entenda melhor os próprios sentimentos, pensamentos e comportamentos",
+      "Gerenciamento das Emoções: permite explorar e lidar com sua tristeza, ansiedade, medo, raiva, compulsão",
+      "Resolução de Conflitos Internos: ajuda a trabalhar questões internas e conflitos, proporcionando clareza e soluções para problemas pessoais",
+      "Melhoria da Autoestima: contribui para o fortalecimento da autoestima e da autoconfiança, promovendo uma imagem positiva de si mesmo",
+      "Desenvolvimento de Habilidades: ensina técnicas de enfrentamento e habilidades sociais que podem ser aplicadas em diversas situações da vida",
+      "Suporte em Momentos Difíceis: oferece um espaço seguro para discutir desafios e crises, proporcionando suporte emocional",
+      "Fortalecimento de Relacionamentos: melhora a comunicação e a compreensão, impactando positivamente os relacionamentos interpessoais",
     ]}
     quote={{
-      text: "Conhecer a si mesmo é o começo de toda sabedoria.",
-      author: "Aristóteles",
+      text: "O caminho se faz caminhando. Só você pode dar o primeiro passo!",
+      author: "",
     }}
   />
 );

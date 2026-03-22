@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import aboutPhoto from "@/assets/about-photo.jpg";
+
+const footerPhoto = "https://sahajlandell.com.br/wp-content/uploads/2023/05/DSC02952-scaled.jpg";
 
 const FooterSection = () => {
   return (
@@ -8,7 +9,7 @@ const FooterSection = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 items-start">
         <div>
           <img
-            src={aboutPhoto}
+            src={footerPhoto}
             alt="Sahaj Landell"
             className="h-16 w-16 rounded-full object-cover shadow-md"
           />
@@ -25,7 +26,7 @@ const FooterSection = () => {
               { label: "Quem Sou", to: "/quem-sou" },
               { label: "Psicoterapia Individual", to: "/psicoterapia-individual" },
               { label: "Psicoterapia em Grupo", to: "/psicoterapia-grupo" },
-              { label: "Terapia Bioenergética", to: "/terapia-corporal-bioenergetica" },
+              { label: "Terapia Corporal Bioenergética", to: "/terapia-corporal-bioenergetica" },
               { label: "Bioescalada", to: "/bioescalada" },
               { label: "Regenera", to: "/regenera" },
             ].map((link) => (

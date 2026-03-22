@@ -3,28 +3,33 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import heroImg from "@/assets/hero-quem-sou.jpg";
-import aboutPhoto from "@/assets/about-photo.jpg";
+
+const heroImg = "https://sahajlandell.com.br/wp-content/uploads/2024/12/DSC02648-scaled.jpg";
+const aboutPhoto = "https://sahajlandell.com.br/wp-content/uploads/2024/07/DSC02578-scaled-e1720906908279.jpg";
 
 const WHATSAPP_URL =
   "https://wa.me/5548991945296?text=Ola!%20Estive%20em%20seu%20site%20e%20tenho%20interesse%20em%20saber%20mais%20sobre%20o%20seu%20trabalho.";
 
 const faqs = [
   {
-    q: "O que é psicoterapia?",
-    a: "A psicoterapia é um processo de autoconhecimento e cura emocional, conduzido por um profissional qualificado, que utiliza técnicas e abordagens específicas para ajudar o indivíduo a compreender e transformar padrões de pensamento, comportamento e emoção.",
+    q: "Psicoterapia é para todas as pessoas?",
+    a: "Sim, não existe qualquer restrição. Todas as pessoas, homens, mulheres, LGBTQA+ de todas as idades podem se beneficiar da psicoterapia individual.",
   },
   {
-    q: "Como funciona o atendimento online?",
-    a: "O atendimento online acontece por videochamada em plataforma segura, com a mesma qualidade e confidencialidade do atendimento presencial. Você precisa apenas de um espaço privado, conexão à internet e um dispositivo com câmera.",
+    q: "O que é a Bioenergética?",
+    a: "A Terapia Bioenergética é uma abordagem desenvolvida a partir das ideias de Wilhelm Reich e sistematizada por Alexander Lowen. Seu fundamento principal é a compreensão de que as emoções estão intrinsecamente ligadas ao corpo. A terapia visa restaurar a dinâmica energética corporal, permitindo que as pessoas fluam com a vida, enfrentando seus altos e baixos de maneira mais integrada. Por meio de exercícios corporais adaptados às necessidades da pessoa e de técnicas respiratórias, a Bioenergética busca aumentar a energia vital do corpo, mobilizar as couraças psicossomáticas e encorajar a expressão de emoções e sensações.",
   },
   {
-    q: "Qual a duração de cada sessão?",
-    a: "Cada sessão tem duração de aproximadamente 50 minutos. A frequência é geralmente semanal, podendo ser ajustada conforme a necessidade de cada pessoa.",
+    q: "O que são as Meditações Ativas",
+    a: "Meditar é silenciar a mente, conectar com o momento presente. Vivemos em um mundo que nos convida a todo momento a sair da presença. As meditações ativas de Osho são práticas que utilizam movimento, expressão e silêncio para ajudar as pessoas a liberar tensões e se conectar consigo mesmas. A ideia central é que, em vez de simplesmente sentar e meditar, você pode usar o corpo para liberar energia e emoções.",
   },
   {
-    q: "O que é Análise Bioenergética?",
-    a: "É uma abordagem psicoterapêutica que integra corpo e mente, entendendo que nossas emoções e experiências ficam registradas no corpo. Através de exercícios corporais e trabalho emocional, promove a liberação de tensões e o resgate da vitalidade.",
+    q: "Qual a importância de uma escuta qualificada no processo terapêutico?",
+    a: "A escuta qualificada é fundamental no processo terapêutico por várias razões. Validação emocional, quando o terapeuta escuta de forma atenta e empática, o cliente se sente valorizado e compreendido. Criação de vínculo, a escuta ativa fortalece a aliança terapêutica. Identificação de padrões, o terapeuta pode perceber padrões de comportamento ou pensamentos que o cliente pode não notar. Promoção da autorreflexão e maior autonomia.",
+  },
+  {
+    q: "O que é Psicoterapia e quais as diferenças entre a Psicoterapia On-line e Presencial?",
+    a: "A psicoterapia é um processo terapêutico que envolve a interação entre um profissional de saúde mental e um cliente, com o objetivo de tratar questões emocionais, comportamentais ou psicológicas. Todos os aspectos são possíveis e viáveis de serem garantidos de forma on-line ou presencial. Presencialmente, a relação terapêutica acontece na fisicalidade, traz as diferentes dimensões que compõem esse encontro.",
   },
 ];
 
@@ -64,29 +69,20 @@ const QuemSou = () => {
           </div>
           <div>
             <span className="text-sm font-sans tracking-widest uppercase text-muted-foreground">
-              Conheça minha história
+              Me conheça melhor
             </span>
             <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-              Eu sou Sahaj Landell
+              Sahaj Landell
             </h2>
-            <p className="mt-2 text-lg font-serif text-primary">
-              Psicólogo • CRP 12/08254
-            </p>
             <div className="mt-6 space-y-4 text-base font-sans text-muted-foreground leading-relaxed">
               <p>
-                Psicólogo, pai de duas meninas e um profissional com 18 anos de experiência dedicados
-                à compreensão profunda das relações humanas. Minha jornada pessoal e profissional me
-                levou a mais de 20 países, onde explorei culturas diversas, ampliando minha visão sobre
-                as complexidades e belezas da condição humana.
+                Sou pai de uma menina de 6 anos e outra de 19. Psicólogo, com 47 anos, venho me dedicando à compreensão dos laços humanos e ao trabalho para diminuir as desigualdades sociais. Minha jornada pessoal e profissional me levou a explorar mais de 20 países, sempre em busca de conexões profundas e significativas com diferentes culturas e histórias.
               </p>
               <p>
-                Sou Terapeuta Corporal Bioenergético e Analista Reichiano, com formação em Psicologia
-                Clínica pela UFSC. Minha prática integra corpo, mente e emoções, oferecendo um
-                acompanhamento terapêutico profundo e humanizado.
+                Sou especialista em Psicologia Institucional e há 18 anos atuo no atendimento individual e em grupo. Minha prática é baseada em uma escuta qualificada e acolhedora, integrando diversas abordagens terapêuticas, o contato com o corpo, a natureza e o movimento.
               </p>
               <p>
-                Acredito que a saúde emocional é buscar o equilíbrio em constantes desequilíbrios que
-                a Vida apresenta. Isso é crescimento!
+                Trabalhei por mais de uma década na implementação de políticas públicas e na garantia de direitos para crianças e adolescentes junto a organizações não governamentais e governamentais. Essa experiência me proporcionou uma compreensão profunda sobre os impactos dos processos sócio-históricos e políticos na vida das pessoas.
               </p>
             </div>
             <a
