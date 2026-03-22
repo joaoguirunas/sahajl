@@ -1,48 +1,56 @@
 
 
-## Plan: Add Multi-Page Routing with All Original Site Pages
+## Plan: Replace All Images and Content with Original Site's Exact Assets
 
-Currently the app is a single-page site. The original site has 7+ separate pages that need to be created as individual routes with their own content, plus navigation updates.
+The current site uses AI-generated placeholder images. The user wants the exact same images and content from the original sahajlandell.com.br. The fix is to replace all local image imports with direct URLs from the original site.
 
-### Pages to Create
+### Image Mapping (Original URLs)
 
-1. **`/` (Home)** -- Already exists, keep as-is
-2. **`/quem-sou`** -- "Quem sou" bio page with hero image, bio text, FAQ accordion, and CTA
-3. **`/psicoterapia-individual`** -- Service detail page with hero, description, benefits list, testimonials, CTA
-4. **`/psicoterapia-grupo`** -- "Despertar do Movimento" group therapy page with hero, description, benefits, CTA
-5. **`/terapia-corporal-bioenergetica`** -- Bioenergetics therapy page with hero, description, quote, CTA
-6. **`/bioescalada`** -- Bioescalada experience page with hero, description, manifesto, benefits, CTA
-7. **`/regenera`** -- "Regenera Masculinidades" men's group page with hero, description, CTA
-8. **`/sahaj-landell`** -- Extended bio page (photo + text side-by-side layout)
+**Home Page:**
+- Hero slide 1: `https://sahajlandell.com.br/wp-content/uploads/2024/09/DSC03129-2-scaled.jpg`
+- Hero slide 2: `https://sahajlandell.com.br/wp-content/uploads/2024/09/DSC02541-1-scaled.jpg`
+- About photo: `https://sahajlandell.com.br/wp-content/uploads/2024/07/DSC02578-scaled-e1720906908279.jpg`
+- Transformations: `https://sahajlandell.com.br/wp-content/uploads/2024/12/DSC02760-2-scaled-1-1.webp`
+- Service 1: `https://sahajlandell.com.br/wp-content/uploads/2024/12/servico-1.webp`
+- Service 2: `https://sahajlandell.com.br/wp-content/uploads/2024/12/servico-2.webp`
+- Service 3: `https://sahajlandell.com.br/wp-content/uploads/2024/12/servico-3.webp`
+- Service 4: `https://sahajlandell.com.br/wp-content/uploads/2024/12/service-4.webp`
+- Service 5 (Regenera): `https://sahajlandell.com.br/wp-content/uploads/2024/12/service-5.webp`
 
-### Shared Components
+**Testimonial Photos:**
+- Mariana Morais: `https://sahajlandell.com.br/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-13-at-22.21.24-e1726601251211.jpeg`
+- Andreia: `https://sahajlandell.com.br/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-12-at-18.22.08.jpeg`
+- Daniel Santiago: `https://sahajlandell.com.br/wp-content/uploads/2024/09/file-1-e1726602308204.jpg`
+- Mariana (atriz): `https://sahajlandell.com.br/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-11-at-22.27.06-e1726598454558.jpeg`
+- Arthur B Linhares: `https://sahajlandell.com.br/wp-content/uploads/2024/09/Screenshot-2024-07-08-at-10.50.15.png`
+- Eduarda Azevedo: `https://sahajlandell.com.br/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-14-at-12.40.36-e1726601135461.jpeg`
 
-- **`ServicePageLayout`** -- Reusable layout for service pages: hero banner image, subtitle, title, description text, optional benefits list, optional quote, WhatsApp CTA button, testimonials section, and footer
-- **`PageHeroBanner`** -- Full-width hero image with breadcrumb overlay (page title)
+**Footer:** `https://sahajlandell.com.br/wp-content/uploads/2023/05/DSC02952-scaled.jpg`
+
+**Subpage hero images:** `https://sahajlandell.com.br/wp-content/uploads/2024/09/DSC02520-scaled.jpg` (psicoterapia individual), `https://sahajlandell.com.br/wp-content/uploads/2024/12/DSC02648-scaled.jpg` (quem sou)
 
 ### File Changes
 
-| File | Action |
+| File | Change |
 |------|--------|
-| `src/components/ServicePageLayout.tsx` | Create -- shared layout for all service/detail pages |
-| `src/pages/QuemSou.tsx` | Create -- bio page with FAQ accordion |
-| `src/pages/PsicoterapiaIndividual.tsx` | Create -- individual therapy detail |
-| `src/pages/PsicoterapiaGrupo.tsx` | Create -- group therapy detail |
-| `src/pages/TerapiaCorporal.tsx` | Create -- bioenergetics detail |
-| `src/pages/Bioescalada.tsx` | Create -- bioescalada detail |
-| `src/pages/Regenera.tsx` | Create -- men's group detail |
-| `src/pages/SahajLandell.tsx` | Create -- extended about page |
-| `src/App.tsx` | Edit -- add all new routes |
-| `src/components/Navbar.tsx` | Edit -- update nav links to use React Router links, add dropdown for services |
-| `src/components/ServicesSection.tsx` | Edit -- make service cards link to their respective routes |
-| `src/components/FooterSection.tsx` | Edit -- add service page links in footer |
+| `src/components/HeroSection.tsx` | Replace local image imports with original site URLs |
+| `src/components/AboutSection.tsx` | Replace about photo with original URL |
+| `src/components/TransformationsSection.tsx` | Replace transformations image with original URL |
+| `src/components/ServicesSection.tsx` | Replace 4 service images with original URLs + add 5th service (Regenera) |
+| `src/components/TestimonialsSection.tsx` | Add testimonial photos from original site |
+| `src/components/FooterSection.tsx` | Replace footer image with original URL |
+| `src/components/ServicePageLayout.tsx` | No change needed (receives heroImage as prop) |
+| `src/pages/QuemSou.tsx` | Replace hero + about image URLs with originals |
+| `src/pages/SahajLandell.tsx` | Replace image URLs with originals, update text content to match original |
+| `src/pages/PsicoterapiaIndividual.tsx` | Replace hero image URL, update content to match original exactly |
+| `src/pages/PsicoterapiaGrupo.tsx` | Replace hero image URL |
+| `src/pages/TerapiaCorporal.tsx` | Replace hero image URL |
+| `src/pages/Bioescalada.tsx` | Replace hero image URL |
+| `src/pages/Regenera.tsx` | Replace hero image URL |
 
-### Technical Details
+### Approach
 
-- Each service page follows the same pattern from the original: large hero image at top, subtitle label, main title, colored subtitle, body text, optional benefits, CTA WhatsApp button, about section, testimonials, footer
-- Use `react-router-dom` `Link` for internal navigation; scroll to top on route change
-- Generate AI images for new page heroes (or reuse existing service images)
-- The `ServicePageLayout` component accepts props: `heroImage`, `subtitle`, `title`, `coloredSubtitle`, `description`, `benefits[]`, `quote`, `whatsappText`, and renders them consistently
-- Navbar will use `Link` for internal pages and keep anchor links for homepage sections
-- Add a `ScrollToTop` component to handle scroll reset on navigation
+All components will switch from importing local `src/assets/*.jpg` files to using string URL constants pointing to the original site's CDN. This avoids needing to download and bundle large image files while ensuring exact visual fidelity to the original site.
+
+Content text on the subpages (QuemSou, PsicoterapiaIndividual, etc.) will be updated to match the exact wording from the original site where it currently differs.
 
