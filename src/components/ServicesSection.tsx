@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import service1 from "@/assets/service-1.jpg";
 import service2 from "@/assets/service-2.jpg";
 import service3 from "@/assets/service-3.jpg";
@@ -5,10 +6,10 @@ import service4 from "@/assets/service-4.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
-  { image: service1, title: "Psicoterapia Individual", desc: "Escuta qualificada e acolhedora para mais equilíbrio e desenvolvimento pessoal." },
-  { image: service2, title: "Psicoterapia em Grupo", desc: "Suporte compartilhado e orientação especializada para transformação pessoal e bem-estar." },
-  { image: service3, title: "Terapia Corporal Bioenergética", desc: "Liberação de tensões acumuladas no corpo, conectando emoções e desbloqueando a energia vital." },
-  { image: service4, title: "Bioescalada em Grupo", desc: "Uma experiência única que combina terapia bioenergética e escalada na natureza." },
+  { image: service1, title: "Psicoterapia Individual", desc: "Escuta qualificada e acolhedora para mais equilíbrio e desenvolvimento pessoal.", to: "/psicoterapia-individual" },
+  { image: service2, title: "Psicoterapia em Grupo", desc: "Suporte compartilhado e orientação especializada para transformação pessoal e bem-estar.", to: "/psicoterapia-grupo" },
+  { image: service3, title: "Terapia Corporal Bioenergética", desc: "Liberação de tensões acumuladas no corpo, conectando emoções e desbloqueando a energia vital.", to: "/terapia-corporal-bioenergetica" },
+  { image: service4, title: "Bioescalada em Grupo", desc: "Uma experiência única que combina terapia bioenergética e escalada na natureza.", to: "/bioescalada" },
 ];
 
 const ServicesSection = () => {
@@ -19,9 +20,10 @@ const ServicesSection = () => {
       <div ref={ref} className="max-w-6xl mx-auto opacity-0">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
-            <div
+            <Link
               key={s.title}
-              className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+              to={s.to}
+              className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow"
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="aspect-square overflow-hidden">
@@ -39,7 +41,7 @@ const ServicesSection = () => {
                   {s.desc}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import aboutPhoto from "@/assets/about-photo.jpg";
 
 const FooterSection = () => {
   return (
     <footer className="bg-foreground py-16 px-8 md:px-16 lg:px-24">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 items-start">
         <div>
           <img
             src={aboutPhoto}
@@ -14,6 +15,30 @@ const FooterSection = () => {
           <p className="mt-4 text-sm font-sans text-cream/70 leading-relaxed max-w-sm">
             Saúde Emocional é buscar o equilíbrio em constantes desequilíbrios que a Vida apresenta. Isso é crescimento!
           </p>
+        </div>
+
+        <div>
+          <h4 className="text-lg font-serif font-semibold text-cream">Páginas</h4>
+          <ul className="mt-4 space-y-2">
+            {[
+              { label: "Home", to: "/" },
+              { label: "Quem Sou", to: "/quem-sou" },
+              { label: "Psicoterapia Individual", to: "/psicoterapia-individual" },
+              { label: "Psicoterapia em Grupo", to: "/psicoterapia-grupo" },
+              { label: "Terapia Bioenergética", to: "/terapia-corporal-bioenergetica" },
+              { label: "Bioescalada", to: "/bioescalada" },
+              { label: "Regenera", to: "/regenera" },
+            ].map((link) => (
+              <li key={link.to}>
+                <Link
+                  to={link.to}
+                  className="text-sm font-sans text-cream/70 hover:text-cream transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div>
