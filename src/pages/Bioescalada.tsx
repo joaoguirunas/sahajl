@@ -1,29 +1,34 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import heroImg from "@/assets/hero-bioescalada.jpg";
+
+const heroImg = "https://sahajlandell.com.br/wp-content/uploads/2024/10/WhatsApp-Image-2022-06-17-at-17.15.59.jpeg";
 
 const Bioescalada = () => (
   <ServicePageLayout
     heroImage={heroImg}
-    subtitle="Experiência Transformadora"
+    subtitle="Vivência"
     title="Bioescalada"
-    coloredSubtitle="Uma experiência única que combina terapia bioenergética e escalada na natureza."
+    coloredSubtitle="Vida, movimento e Expansão"
     description={[
-      "A Bioescalada é uma metodologia inovadora criada por Sahaj Landell que une os princípios da Análise Bioenergética com a prática da escalada em rocha. É uma experiência imersiva na natureza que desafia limites físicos e emocionais de forma segura e acompanhada.",
-      "Na parede de rocha, somos convidados a enfrentar nossos medos, confiar no próprio corpo e descobrir recursos internos que desconhecíamos. A escalada se torna uma metáfora viva dos desafios da vida — e a forma como lidamos com ela revela muito sobre como enfrentamos nossas dificuldades cotidianas.",
-      "A experiência é realizada em grupo, em ambiente natural, e inclui momentos de preparação corporal bioenergética, a escalada em si e rodas de partilha para integração da vivência.",
+      "Na vivência de Bioescalada, eu Sahaj Landell junto com Gustavo Mattei, idealizador do projeto Liquen, escalador e facilitador de vivências na natureza, te guiamos para uma transformação profunda e autêntica.",
+      "Uma proposta que nós criamos onde você explora os seus limites, supera desafios e descobre um novo patamar de equilíbrio e autenticidade.",
+      "A junção da prática da Bioenergética com a aventura da escalada leva você a novos patamares físicos e emocionais!",
+      "Será um dia onde você irá experimentar a escalada pela primeira vez de duas formas complementares:",
+      "1 • para dentro do seu ser, através de exercícios de Bioenergética",
+      "2 • na Natureza através de trilha e escalada em vias iniciantes",
+      "Combinar essas experiências te alinha para uma conexão mais profunda consigo mesmo, expandindo seus horizontes - uma jornada de autoconhecimento única.",
+      "Não precisa ter nenhuma experiência em escalada.",
     ]}
     benefits={[
-      "Superação de medos e crenças limitantes",
-      "Fortalecimento da autoconfiança e coragem",
-      "Conexão profunda com a natureza",
-      "Experiência de grupo e suporte mútuo",
-      "Integração corpo-mente em situação real de desafio",
-      "Descoberta de recursos internos desconhecidos",
-      "Expansão dos limites pessoais",
+      "Autoconhecimento: estimula a introspecção e a reflexão, permitindo que os praticantes explorem suas emoções, limites e potenciais",
+      "Desenvolvimento da atenção plena: toda experiência te convida a estar em contato com teu corpo, suas sensações e os estímulos externos",
+      "Equilíbrio energético: a Bioenergética ajuda a liberar bloqueios e promover um fluxo saudável de energia",
+      "Fortalecimento mental e emocional: superar desafios físicos durante a escalada pode refletir em um fortalecimento da resiliência e da autoconfiança",
+      "Maior conexão com sua vida: a combinação de atividade física, meditação, bioenergética e a natureza, promove uma integração profunda do seu ser",
+      "Estimula sua criatividade: toda experiência da Bioescalada te convida a estar presente, lidar constantemente com situações inusitadas",
     ]}
     quote={{
-      text: "Na rocha, não há como fingir. O corpo revela quem somos de verdade.",
-      author: "Sahaj Landell",
+      text: "A Montanha mais desafiadora de escalar não é aquela que se encontra na sua frente, mas aquela que carregamos dentro!",
+      author: "",
     }}
   />
 );

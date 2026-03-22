@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
-import service1 from "@/assets/service-1.jpg";
-import service2 from "@/assets/service-2.jpg";
-import service3 from "@/assets/service-3.jpg";
-import service4 from "@/assets/service-4.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
-  { image: service1, title: "Psicoterapia Individual", desc: "Escuta qualificada e acolhedora para mais equilíbrio e desenvolvimento pessoal.", to: "/psicoterapia-individual" },
-  { image: service2, title: "Psicoterapia em Grupo", desc: "Suporte compartilhado e orientação especializada para transformação pessoal e bem-estar.", to: "/psicoterapia-grupo" },
-  { image: service3, title: "Terapia Corporal Bioenergética", desc: "Liberação de tensões acumuladas no corpo, conectando emoções e desbloqueando a energia vital.", to: "/terapia-corporal-bioenergetica" },
-  { image: service4, title: "Bioescalada em Grupo", desc: "Uma experiência única que combina terapia bioenergética e escalada na natureza.", to: "/bioescalada" },
+  { image: "https://sahajlandell.com.br/wp-content/uploads/2024/12/servico-1.webp", title: "Psicoterapia Individual", desc: "Escuta qualificada e acolhedora para mais equilíbrio e desenvolvimento pessoal.", to: "/psicoterapia-individual" },
+  { image: "https://sahajlandell.com.br/wp-content/uploads/2024/12/servico-2.webp", title: "Psicoterapia em Grupo", desc: "Suporte compartilhado e orientação especializada para transformação pessoal e bem-estar.", to: "/psicoterapia-grupo" },
+  { image: "https://sahajlandell.com.br/wp-content/uploads/2024/12/servico-3.webp", title: "Terapia Corporal Bioenergética", desc: "Liberação de tensões acumuladas no corpo, conectando emoções e desbloqueando a energia vital para uma reconexão profunda.", to: "/terapia-corporal-bioenergetica" },
+  { image: "https://sahajlandell.com.br/wp-content/uploads/2024/12/service-4.webp", title: "Bioescalada em Grupo", desc: "Uma experiência única que combina terapia bioenergética e escalada na natureza. Uma jornada de reconexão com seu prazer, instinto e coragem.", to: "/bioescalada" },
+  { image: "https://sahajlandell.com.br/wp-content/uploads/2024/12/service-5.webp", title: "Regenera Masculinidades", desc: "Espaço de reflexão e movimento sobre a importância de novas formas de masculidades existirem e serem afirmadas nos dias atuais.", to: "/regenera" },
 ];
 
 const ServicesSection = () => {
@@ -18,7 +15,7 @@ const ServicesSection = () => {
   return (
     <section className="bg-background py-24 px-8 md:px-16 lg:px-24">
       <div ref={ref} className="max-w-6xl mx-auto opacity-0">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {services.map((s, i) => (
             <Link
               key={s.title}

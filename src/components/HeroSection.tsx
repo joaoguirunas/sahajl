@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
-import heroSurf from "@/assets/hero-surf.jpg";
-import heroMeditation from "@/assets/hero-surf-2.jpg";
 
 const slides = [
   {
-    image: heroSurf,
+    image: "https://sahajlandell.com.br/wp-content/uploads/2024/09/DSC03129-2-scaled.jpg",
     tagline: "Psicoterapia é respiro da alma e do corpo",
     headline: "Desbloqueie seu potencial criativo e viva uma vida mais prazerosa e integrada",
   },
   {
-    image: heroMeditation,
+    image: "https://sahajlandell.com.br/wp-content/uploads/2024/09/DSC02541-1-scaled.jpg",
     tagline: "Psicoterapia é respiro da alma e do corpo",
     headline: "Resgate sua curiosidade e alegria na Vida",
   },

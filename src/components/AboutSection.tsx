@@ -1,5 +1,6 @@
-import aboutPhoto from "@/assets/about-photo.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+
+const aboutPhoto = "https://sahajlandell.com.br/wp-content/uploads/2024/07/DSC02578-scaled-e1720906908279.jpg";
 
 const AboutSection = () => {
   const leftRef = useScrollReveal("animate-slide-left");
@@ -31,7 +32,7 @@ const AboutSection = () => {
             Psicólogo, pai de duas meninas e um profissional com 18 anos de experiência dedicados
             à compreensão profunda das relações humanas. Minha jornada pessoal e profissional me
             levou a mais de 20 países, onde explorei culturas diversas, ampliando minha visão sobre
-            as complexidades e belezas da condição humana.
+            as complexidades e belezas da condição humana. Especialista em Psicologia Institucional, atuo com atendimentos individuais e em grupo, tanto presencial quanto online, integrando práticas que vão além do consultório tradicional.
           </p>
           <div className="mt-8 grid grid-cols-2 gap-4">
             {["Atendimento Presencial", "Atendimento on-line", "Desenvolvimento de coletividades", "Conexão com a natureza"].map(

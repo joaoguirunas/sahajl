@@ -1,14 +1,15 @@
-import transformationsImg from "@/assets/transformations.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+
+const transformationsImg = "https://sahajlandell.com.br/wp-content/uploads/2024/12/DSC02760-2-scaled-1-1.webp";
 
 const items = [
   "Reconecte-se com o Prazer e a Alegria de Viver.",
   "Fortaleça Sua Autoconfiança e Seu Valor Próprio.",
   "Libere Bloqueios Emocionais e Energéticos.",
   "Integre Corpo, Mente e Emoções.",
-  "Melhore Suas Relações Interpessoais.",
+  "Melhore Suas Relações Interpessoais e Autenticidade nos Vínculos.",
   "Reduza Estresse, Ansiedade e Sintomas Depressivos.",
-  "Desenvolva Resiliência Emocional.",
+  "Desenvolva Resiliência Emocional e Capacidade de Auto-regulação",
   "Descubra Novas Formas de Viver e Amar.",
   "Reconheça e Expresse Suas Emoções de Forma Saudável.",
 ];
@@ -32,7 +33,7 @@ const TransformationsSection = () => {
           </h3>
           <p className="mt-4 text-base text-muted-foreground font-sans leading-relaxed">
             Explore um novo caminho de autoconhecimento, onde cada etapa é uma oportunidade
-            de se reconectar consigo mesmo.
+            de se reconectar consigo mesmo, superar desafios emocionais e viver de forma mais plena e autêntica.
           </p>
           <ul className="mt-8 space-y-3">
             {items.map((item) => (
