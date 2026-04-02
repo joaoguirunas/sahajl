@@ -24,7 +24,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <MobilePreview />
+        {import.meta.env.DEV && <MobilePreview />}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/quem-sou" element={<QuemSou />} />
