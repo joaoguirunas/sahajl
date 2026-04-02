@@ -7,24 +7,24 @@
 @layer base {
   :root {
     --background: 30 25% 97%;
-    --foreground: 25 20% 15%;
+    --foreground: 155 30% 12%;
 
     --card: 30 20% 95%;
-    --card-foreground: 25 20% 15%;
+    --card-foreground: 155 30% 12%;
 
     --popover: 30 25% 97%;
-    --popover-foreground: 25 20% 15%;
+    --popover-foreground: 155 30% 12%;
 
-    --primary: 25 40% 58%;
+    --primary: 155 40% 25%;
     --primary-foreground: 30 25% 97%;
 
-    --secondary: 30 15% 90%;
-    --secondary-foreground: 25 20% 20%;
+    --secondary: 155 10% 90%;
+    --secondary-foreground: 155 30% 18%;
 
-    --muted: 30 12% 92%;
-    --muted-foreground: 25 10% 50%;
+    --muted: 155 8% 92%;
+    --muted-foreground: 155 10% 45%;
 
-    --accent: 25 40% 58%;
+    --accent: 155 40% 25%;
     --accent-foreground: 30 25% 97%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,14 +32,14 @@
 
     --border: 30 15% 85%;
     --input: 30 15% 85%;
-    --ring: 25 40% 58%;
+    --ring: 155 40% 25%;
 
-    --radius: 0.5rem;
+    --radius: 1.25rem;
 
     --terracotta: 25 40% 58%;
     --terracotta-light: 25 35% 72%;
     --terracotta-dark: 25 45% 42%;
-    --warm-brown: 25 25% 25%;
+    --warm-brown: 155 35% 18%;
     --cream: 35 30% 95%;
     --cream-dark: 30 20% 88%;
 
@@ -72,6 +72,16 @@
     text-wrap: pretty;
     overflow-wrap: break-word;
   }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes zoom-slow {
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.08); }
 }
 
 @layer utilities {

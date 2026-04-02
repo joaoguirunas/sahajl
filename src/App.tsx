@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ScrollToTop from "@/components/ScrollToTop";
+import MobilePreview from "@/components/MobilePreview";
 import Index from "./pages/Index.tsx";
 import QuemSou from "./pages/QuemSou.tsx";
 import PsicoterapiaIndividual from "./pages/PsicoterapiaIndividual.tsx";
@@ -23,6 +24,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <MobilePreview />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/quem-sou" element={<QuemSou />} />

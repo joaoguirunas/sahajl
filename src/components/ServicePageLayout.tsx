@@ -9,6 +9,7 @@ const WHATSAPP_URL =
 
 interface ServicePageLayoutProps {
   heroImage: string;
+  heroObjectPosition?: string;
   subtitle: string;
   title: string;
   coloredSubtitle?: string;
@@ -21,6 +22,7 @@ interface ServicePageLayoutProps {
 
 const ServicePageLayout = ({
   heroImage,
+  heroObjectPosition = "center center",
   subtitle,
   title,
   coloredSubtitle,
@@ -42,6 +44,7 @@ const ServicePageLayout = ({
           src={heroImage}
           alt={title}
           className="h-full w-full object-cover"
+          style={{ objectPosition: heroObjectPosition }}
         />
         <div className="absolute inset-0 bg-foreground/50" />
         <div className="relative z-10 flex h-full flex-col justify-end px-8 md:px-16 lg:px-24 pb-12">
