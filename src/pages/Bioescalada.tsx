@@ -503,7 +503,7 @@ const Bioescalada = () => {
               style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards" }}
             >
               <div
-                className="mx-auto w-full max-w-[240px] aspect-[4/5] rounded-2xl flex items-center justify-center"
+                className="w-full aspect-[3/2] rounded-2xl flex items-center justify-center"
                 style={{ background: "hsl(var(--warm-brown)/0.4)" }}
                 role="img"
                 aria-label="Foto de Sahaj Landell"
@@ -525,7 +525,7 @@ const Bioescalada = () => {
               className="flex flex-col gap-5 p-8 rounded-2xl"
               style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards", animationDelay: "150ms" }}
             >
-              <div className="mx-auto w-full max-w-[280px] aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="w-full aspect-[3/2] rounded-2xl overflow-hidden">
                 <picture>
                   <source type="image/webp" srcSet="/bioescalada/facilitador-gustavo.webp" />
                   <img
