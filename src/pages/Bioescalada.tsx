@@ -496,31 +496,53 @@ const Bioescalada = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {[
-              {
-                name: "Sahaj Landell",
-                role: "Psicólogo e terapeuta corporal",
-                bio: "Atende desde 2006. Mais de 18 anos integrando psicoterapia, bioenergética, terapias corporais e contato com a natureza. Trabalha com o corpo como porta de entrada — pelo movimento, pela respiração, pelo que aparece quando a mente para de comandar.",
-              },
-              {
-                name: "Gustavo Mattei",
-                role: "Guia de natureza e instrutor de escalada",
-                bio: "Idealizador do Projeto Liquen. Formado em Ecologia Profunda, Ecopsicologia, Educação Experiencial ao Ar Livre (FEAL), técnicas Leave No Trace, condução de turismo de aventura, primeiros socorros em ambientes naturais e técnicas verticais. Conduz com segurança técnica, escuta atenta e clareza.",
-              },
-            ].map((f, i) => (
-              <div
-                key={f.name}
-                className="flex flex-col gap-5 p-8 rounded-2xl"
-                style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards", animationDelay: `${i * 150}ms` }}
-              >
+
+            {/* Sahaj */}
+            <div
+              className="flex flex-col gap-5 rounded-2xl overflow-hidden"
+              style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards" }}
+            >
+              <div className="w-full aspect-[3/4] rounded-2xl" style={{ background: "hsl(var(--warm-brown)/0.4)" }} aria-label="Foto de Sahaj Landell" role="img">
+                <div className="w-full h-full flex items-center justify-center">
+                  <span className="text-cream/30 text-sm font-sans">foto em breve</span>
+                </div>
+              </div>
+              <div className="px-8 pb-8 flex flex-col gap-4">
                 <div>
-                  <p className="font-serif text-xl font-semibold text-foreground leading-snug">{f.name}</p>
-                  <p className="mt-1 text-xs font-sans font-medium tracking-[0.15em] uppercase text-terracotta">{f.role}</p>
+                  <p className="font-serif text-xl font-semibold text-foreground leading-snug">Sahaj Landell</p>
+                  <p className="mt-1 text-xs font-sans font-medium tracking-[0.15em] uppercase text-terracotta">Psicólogo e terapeuta corporal</p>
                 </div>
                 <span className="block w-10 h-px bg-border" />
-                <p className="text-sm font-sans text-muted-foreground leading-relaxed">{f.bio}</p>
+                <p className="text-sm font-sans text-muted-foreground leading-relaxed">Atende desde 2006. Mais de 18 anos integrando psicoterapia, bioenergética, terapias corporais e contato com a natureza. Trabalha com o corpo como porta de entrada — pelo movimento, pela respiração, pelo que aparece quando a mente para de comandar.</p>
               </div>
-            ))}
+            </div>
+
+            {/* Gustavo */}
+            <div
+              className="flex flex-col gap-5 rounded-2xl overflow-hidden"
+              style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards", animationDelay: "150ms" }}
+            >
+              <picture>
+                <source type="image/webp" srcSet="/bioescalada/facilitador-gustavo.webp" />
+                <img
+                  src="/bioescalada/facilitador-gustavo.jpg"
+                  alt="Gustavo Mattei, guia de natureza e instrutor de escalada"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full aspect-[3/4] object-cover"
+                  style={{ objectPosition: "center top" }}
+                />
+              </picture>
+              <div className="px-8 pb-8 flex flex-col gap-4">
+                <div>
+                  <p className="font-serif text-xl font-semibold text-foreground leading-snug">Gustavo Mattei</p>
+                  <p className="mt-1 text-xs font-sans font-medium tracking-[0.15em] uppercase text-terracotta">Guia de natureza e instrutor de escalada</p>
+                </div>
+                <span className="block w-10 h-px bg-border" />
+                <p className="text-sm font-sans text-muted-foreground leading-relaxed">Idealizador do Projeto Liquen. Formado em Ecologia Profunda, Ecopsicologia, Educação Experiencial ao Ar Livre (FEAL), técnicas Leave No Trace, condução de turismo de aventura, primeiros socorros em ambientes naturais e técnicas verticais. Conduz com segurança técnica, escuta atenta e clareza.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
