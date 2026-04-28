@@ -396,7 +396,7 @@ const Bioescalada = () => {
       </div>
 
       {/* ── O QUE PODE MUDAR ── */}
-      <section className="bg-warm-brown py-20 px-8 md:px-16 lg:px-24">
+      <section className="bg-warm-brown pt-20 pb-0 px-8 md:px-16 lg:px-24">
         <div ref={benefitsRef} className="max-w-5xl mx-auto reveal-section">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.6fr] gap-12 md:gap-20 items-start">
             <div className="md:sticky md:top-24">
@@ -437,24 +437,17 @@ const Bioescalada = () => {
         </div>
       </section>
 
-      {/* Wave → background */}
-      <div className="relative leading-none -mb-px" style={{ background: "hsl(var(--warm-brown))" }}>
-        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-10 md:h-14" style={{ fill: "hsl(var(--background))" }}>
-          <path d="M0,40 C480,0 960,60 1440,20 L1440,60 L0,60 Z" />
-        </svg>
-      </div>
-
-      {/* ── IMAGEM GRUPO TRILHA ── */}
-      <div className="bg-background w-full overflow-hidden h-[250px] md:h-[450px]">
+      {/* ── IMAGEM GRUPO RODA ── */}
+      <div className="w-full overflow-hidden h-[250px] md:h-[450px]">
         <picture>
-          <source type="image/webp" srcSet="/bioescalada/grupo-trilha.webp" />
+          <source type="image/webp" srcSet="/bioescalada/grupo-roda.webp" />
           <img
-            src="/bioescalada/grupo-trilha.jpg"
-            alt="Grupo em trilha na natureza durante a vivência Bioescalada"
+            src="/bioescalada/grupo-roda.jpg"
+            alt="Grupo em roda durante vivência Bioescalada na natureza"
             loading="lazy"
             decoding="async"
             className="w-full h-full"
-            style={{ objectFit: "cover", objectPosition: "center 40%" }}
+            style={{ objectFit: "cover", objectPosition: "center center" }}
           />
         </picture>
       </div>
