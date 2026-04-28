@@ -620,19 +620,19 @@ const Bioescalada = () => {
 
         <div className="absolute bottom-0 left-0 right-0 z-10 px-8 md:px-16 lg:px-24 pb-16 md:pb-20">
           <p className="text-2xl md:text-4xl lg:text-5xl font-serif font-semibold text-cream leading-tight max-w-xl">
-            Toda subida começa com um passo que parece impossível.
+            O próximo passo é descobrir quando e onde acontece.
           </p>
           <p className="mt-4 text-sm font-sans text-cream/60 leading-relaxed max-w-sm">
-            Uma conversa inicial, sem compromisso. Só para entender se faz sentido para o seu momento.
+            Abrimos novas turmas ao longo do ano. Manda uma mensagem e a gente te conta a próxima data e o local.
           </p>
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_DATA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-7 inline-flex items-center gap-2.5 rounded-full bg-primary px-8 py-4 text-sm font-sans font-medium text-primary-foreground transition-shadow hover:shadow-lg active:scale-[0.97]"
           >
             <WhatsAppIcon />
-            Quero participar →
+            Quero saber a próxima data →
           </a>
         </div>
       </section>
