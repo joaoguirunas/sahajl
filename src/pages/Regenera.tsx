@@ -309,29 +309,6 @@ const Regenera = () => {
         </div>
       </section>
 
-      {/* ── IMAGEM ── */}
-      <div className="relative w-full overflow-hidden" style={{ maxHeight: "520px" }}>
-        <div className="absolute top-0 left-0 w-full leading-none z-10">
-          <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-10 md:h-14" style={{ fill: "hsl(var(--background))" }}>
-            <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" />
-          </svg>
-        </div>
-        <img
-          src="/regen-borboleta.jpg"
-          alt=""
-          aria-hidden
-          className="w-full object-cover"
-          style={{ objectPosition: "center 40%" }}
-          loading="lazy"
-          decoding="async"
-        />
-        <div className="absolute bottom-0 left-0 w-full leading-none">
-          <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-10 md:h-14" style={{ fill: "hsl(var(--primary))" }}>
-            <path d="M0,35 C480,0 960,60 1440,30 L1440,60 L0,60 Z" />
-          </svg>
-        </div>
-      </div>
-
       {/* ── QUOTE ── */}
       <section className="relative bg-primary py-20 px-8 md:px-16 overflow-hidden">
         <span
