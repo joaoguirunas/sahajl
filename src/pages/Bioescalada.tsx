@@ -623,7 +623,7 @@ const Bioescalada = () => {
             O próximo passo é descobrir quando e onde acontece.
           </p>
           <p className="mt-4 text-sm font-sans text-cream/60 leading-relaxed max-w-sm">
-            Abrimos novas turmas ao longo do ano. Manda uma mensagem e a gente te conta a próxima data e o local.
+            As vivências acontecem regularmente. Manda uma mensagem e a gente te conta quando e onde é a próxima.
           </p>
           <a
             href={WHATSAPP_DATA_URL}
