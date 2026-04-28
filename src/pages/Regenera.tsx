@@ -310,7 +310,7 @@ const Regenera = () => {
       </section>
 
       {/* ── IMAGEM ── */}
-      <div className="w-full overflow-hidden" style={{ maxHeight: "520px" }}>
+      <div className="relative w-full overflow-hidden" style={{ maxHeight: "520px" }}>
         <img
           src="/regen-borboleta.jpg"
           alt=""
@@ -320,6 +320,11 @@ const Regenera = () => {
           loading="lazy"
           decoding="async"
         />
+        <div className="absolute bottom-0 left-0 w-full leading-none">
+          <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-10 md:h-14" style={{ fill: "hsl(var(--primary))" }}>
+            <path d="M0,35 C480,0 960,60 1440,30 L1440,60 L0,60 Z" />
+          </svg>
+        </div>
       </div>
 
       {/* ── QUOTE ── */}
