@@ -502,13 +502,18 @@ const Bioescalada = () => {
               className="flex flex-col gap-5 p-8 rounded-2xl"
               style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards" }}
             >
-              <div
-                className="w-full aspect-[16/9] rounded-2xl flex items-center justify-center"
-                style={{ background: "hsl(var(--warm-brown)/0.4)" }}
-                role="img"
-                aria-label="Foto de Sahaj Landell"
-              >
-                <span className="text-cream/30 text-sm font-sans">foto em breve</span>
+              <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden">
+                <picture>
+                  <source type="image/webp" srcSet="/bioescalada/facilitador-sahaj.webp" />
+                  <img
+                    src="/bioescalada/facilitador-sahaj.jpg"
+                    alt="Sahaj Landell escalando na rocha"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: "center 35%" }}
+                  />
+                </picture>
               </div>
               <div className="flex flex-col gap-4">
                 <div>
