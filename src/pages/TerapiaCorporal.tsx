@@ -53,7 +53,7 @@ const benefits = [
   {
     icon: Waves,
     title: "Reconexão com o prazer",
-    desc: "Restaurar o fluxo de energia significa também restaurar a capacidade de sentir alegria, prazer e desejo.",
+    desc: "Restaurar o fluxo de energia significa também restaurar a capacidade de sentir alegria, amor, prazer e desejo.",
   },
   {
     icon: Wind,
@@ -199,7 +199,7 @@ const TerapiaCorporal = () => {
               <span className="block w-8 h-px bg-cream/30" />
             </span>
             <h2 className="mt-5 text-3xl md:text-5xl font-serif font-semibold text-cream leading-snug">
-              Onde as palavras não chegam,<br className="hidden md:block" /> o corpo fala.
+              O inconsciente está no corpo. É preciso saber reconhecer e gerar<br className="hidden md:block" /> movimento na energia de vida que está bloqueada.
             </h2>
           </div>
 
