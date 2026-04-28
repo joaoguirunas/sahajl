@@ -499,15 +499,18 @@ const Bioescalada = () => {
 
             {/* Sahaj */}
             <div
-              className="flex flex-col gap-5 rounded-2xl overflow-hidden"
+              className="flex flex-col gap-5 p-8 rounded-2xl"
               style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards" }}
             >
-              <div className="w-full aspect-[3/4] rounded-2xl" style={{ background: "hsl(var(--warm-brown)/0.4)" }} aria-label="Foto de Sahaj Landell" role="img">
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="text-cream/30 text-sm font-sans">foto em breve</span>
-                </div>
+              <div
+                className="mx-auto w-full max-w-[240px] aspect-[4/5] rounded-2xl flex items-center justify-center"
+                style={{ background: "hsl(var(--warm-brown)/0.4)" }}
+                role="img"
+                aria-label="Foto de Sahaj Landell"
+              >
+                <span className="text-cream/30 text-sm font-sans">foto em breve</span>
               </div>
-              <div className="px-8 pb-8 flex flex-col gap-4">
+              <div className="flex flex-col gap-4">
                 <div>
                   <p className="font-serif text-xl font-semibold text-foreground leading-snug">Sahaj Landell</p>
                   <p className="mt-1 text-xs font-sans font-medium tracking-[0.15em] uppercase text-terracotta">Psicólogo e terapeuta corporal</p>
@@ -519,21 +522,23 @@ const Bioescalada = () => {
 
             {/* Gustavo */}
             <div
-              className="flex flex-col gap-5 rounded-2xl overflow-hidden"
+              className="flex flex-col gap-5 p-8 rounded-2xl"
               style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards", animationDelay: "150ms" }}
             >
-              <picture>
-                <source type="image/webp" srcSet="/bioescalada/facilitador-gustavo.webp" />
-                <img
-                  src="/bioescalada/facilitador-gustavo.jpg"
-                  alt="Gustavo Mattei, guia de natureza e instrutor de escalada"
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full aspect-[3/4] object-cover"
-                  style={{ objectPosition: "center top" }}
-                />
-              </picture>
-              <div className="px-8 pb-8 flex flex-col gap-4">
+              <div className="mx-auto w-full max-w-[240px] aspect-[4/5] rounded-2xl overflow-hidden">
+                <picture>
+                  <source type="image/webp" srcSet="/bioescalada/facilitador-gustavo.webp" />
+                  <img
+                    src="/bioescalada/facilitador-gustavo.jpg"
+                    alt="Gustavo Mattei, guia de natureza e instrutor de escalada"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: "center 20%" }}
+                  />
+                </picture>
+              </div>
+              <div className="flex flex-col gap-4">
                 <div>
                   <p className="font-serif text-xl font-semibold text-foreground leading-snug">Gustavo Mattei</p>
                   <p className="mt-1 text-xs font-sans font-medium tracking-[0.15em] uppercase text-terracotta">Guia de natureza e instrutor de escalada</p>
