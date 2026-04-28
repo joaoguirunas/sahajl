@@ -154,7 +154,7 @@ const Bioescalada = () => {
             className="h-full w-full object-cover"
             fetchPriority="high"
             decoding="async"
-            style={{ objectPosition: "center 30%", transformOrigin: "center center", transition: "transform 8s ease-out" }}
+            style={{ objectPosition: "60% 30%", transformOrigin: "center center", transition: "transform 8s ease-out" }}
           />
         </picture>
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(var(--foreground)) 0%, hsl(var(--foreground)/0.4) 55%, transparent 100%)" }} />
