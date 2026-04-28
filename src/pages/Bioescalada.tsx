@@ -68,14 +68,18 @@ const faqs = [
   { q: "E se chover?", a: "Se a previsão inviabilizar a segurança, remarcamos. A segurança vem antes." },
 ];
 
-function FaqItem({ q, a }: { q: string; a: string }) {
+function FaqItem({ q, a, id }: { q: string; a: string; id: string }) {
   const [open, setOpen] = useState(false);
+  const panelId = `faq-panel-${id}`;
+  const btnId   = `faq-btn-${id}`;
   return (
     <div className="border-t border-border/40">
       <button
+        id={btnId}
         onClick={() => setOpen(o => !o)}
         className="w-full flex items-center justify-between gap-4 py-5 text-left"
         aria-expanded={open}
+        aria-controls={panelId}
       >
         <span className="font-serif text-base md:text-lg font-semibold text-foreground leading-snug">{q}</span>
         <ChevronDown
@@ -85,8 +89,11 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         />
       </button>
       <div
+        id={panelId}
+        role="region"
+        aria-labelledby={btnId}
         className="overflow-hidden transition-all duration-300"
-        style={{ maxHeight: open ? "200px" : "0px", opacity: open ? 1 : 0 }}
+        style={{ maxHeight: open ? "400px" : "0px", opacity: open ? 1 : 0 }}
       >
         <p className="pb-5 text-sm font-sans text-muted-foreground leading-relaxed">{a}</p>
       </div>
@@ -131,19 +138,25 @@ const Bioescalada = () => {
         <meta property="og:title" content="Bioescalada | Sahaj Landell" />
         <meta property="og:description" content="Bioenergética e escalada na natureza. Um dia inteiro pra encontrar, no corpo, o que a mente já cansou de tentar resolver." />
         <meta property="og:url" content="https://sahajlandell.com.br/bioescalada" />
-        <meta property="og:image" content="/bioescalada/hero.jpg" />
+        <meta property="og:image" content="https://sahajlandell.com.br/bioescalada/hero.jpg" />
+        <link rel="preload" as="image" href="/bioescalada/hero.webp" type="image/webp" />
       </Helmet>
       <Navbar />
 
       {/* ── HERO ── */}
       <section className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden">
-        <img
-          ref={heroRef}
-          src={heroImg}
-          alt="Pessoa escalando rocha na natureza durante vivência Bioescalada"
-          className="h-full w-full object-cover"
-          style={{ objectPosition: "center 30%", transformOrigin: "center center", transition: "transform 8s ease-out" }}
-        />
+        <picture>
+          <source type="image/webp" srcSet="/bioescalada/hero.webp" />
+          <img
+            ref={heroRef}
+            src={heroImg}
+            alt="Pessoa escalando rocha na natureza durante vivência Bioescalada"
+            className="h-full w-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+            style={{ objectPosition: "center 30%", transformOrigin: "center center", transition: "transform 8s ease-out" }}
+          />
+        </picture>
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(var(--foreground)) 0%, hsl(var(--foreground)/0.4) 55%, transparent 100%)" }} />
 
         <div
@@ -519,7 +532,7 @@ const Bioescalada = () => {
 
           <div>
             {faqs.map((item, i) => (
-              <FaqItem key={i} q={item.q} a={item.a} />
+              <FaqItem key={i} id={String(i)} q={item.q} a={item.a} />
             ))}
             <div className="border-t border-border/40" />
           </div>
@@ -609,13 +622,17 @@ const Bioescalada = () => {
 
       {/* ── CTA FINAL ── */}
       <section className="relative overflow-hidden h-[70vh] md:h-[80vh] bg-foreground">
-        <img
-          src={ctaImg}
-          alt=""
-          aria-hidden
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 30%" }}
-        />
+        <picture>
+          <source type="image/webp" srcSet="/bioescalada/cta.webp" />
+          <img
+            src={ctaImg}
+            alt=""
+            aria-hidden
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: "center 30%" }}
+          />
+        </picture>
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(var(--foreground)) 0%, hsl(var(--foreground)/0.7) 35%, hsl(var(--foreground)/0.1) 70%, transparent 100%)" }} />
 
         <div className="absolute bottom-0 left-0 right-0 z-10 px-8 md:px-16 lg:px-24 pb-16 md:pb-20">
