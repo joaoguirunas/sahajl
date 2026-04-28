@@ -39,7 +39,7 @@ const benefits = [
   {
     icon: Brain,
     title: "Autoconhecimento real",
-    desc: "Entender não só o que você sente, mas por que sente — e como isso molda suas escolhas e seus relacionamentos.",
+    desc: "Ampliar sua percepção sobre o que você sente e como você sente — localizando no seu corpo e na vida caminhos para maior autonomia.",
   },
   {
     icon: Heart,
@@ -109,7 +109,7 @@ const PsicoterapiaIndividual = () => {
           style={{ opacity: 0, transform: "translateY(20px)", transition: "opacity 0.9s ease, transform 0.9s ease" }}
         >
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream leading-tight max-w-2xl">
-            O espaço que faltava<br className="hidden md:block" /> para você se ouvir<br className="hidden md:block" /> de verdade.
+            O espaço que faltava<br className="hidden md:block" /> para você se escutar<br className="hidden md:block" /> de verdade.
           </h1>
         </div>
 
@@ -228,9 +228,9 @@ const PsicoterapiaIndividual = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
               {[
-                { Icon: Ear, title: "Escuta", text: "Entender sua história, o que te trouxe até aqui e o que você carrega — sem pressa, sem agenda." },
-                { Icon: Search, title: "Exploração", text: "Identificar padrões, emoções e crenças que moldam o seu jeito de ser, se relacionar e reagir." },
-                { Icon: Layers, title: "Integração", text: "Desenvolver novas formas de se relacionar consigo mesmo e com o mundo — com mais liberdade e autenticidade." },
+                { Icon: Ear, title: "Escuta", text: "Entender sua história, o que te trouxe até aqui e o que você carrega — sem pressa." },
+                { Icon: Search, title: "Processo", text: "Te conhecer melhor, identificar padrões, emoções e crenças que moldam o seu jeito de ser, se relacionar e reagir." },
+                { Icon: Layers, title: "Integração", text: "Ampliar e desenvolver novas formas de se relacionar consigo mesmo e com o mundo — com mais liberdade e autenticidade." },
               ].map(({ Icon, title, text }, i) => (
                 <div
                   key={title}
@@ -282,7 +282,7 @@ const PsicoterapiaIndividual = () => {
                 Quando você se encontra, tudo ao redor se reorganiza.
               </h2>
               <p className="mt-4 text-sm font-sans text-muted-foreground leading-relaxed">
-                Não são promessas. São os movimentos que naturalmente acontecem quando você começa a se ouvir de verdade.
+                Não são promessas. São os movimentos que acontecem quando você começa a se perceber de verdade.
               </p>
             </div>
 
