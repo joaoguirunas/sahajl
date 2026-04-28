@@ -309,6 +309,19 @@ const Regenera = () => {
         </div>
       </section>
 
+      {/* ── IMAGEM ── */}
+      <div className="w-full overflow-hidden" style={{ maxHeight: "520px" }}>
+        <img
+          src="/regen-borboleta.jpg"
+          alt=""
+          aria-hidden
+          className="w-full object-cover"
+          style={{ objectPosition: "center 40%" }}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
       {/* ── QUOTE ── */}
       <section className="relative bg-primary py-20 px-8 md:px-16 overflow-hidden">
         <span
