@@ -28,10 +28,10 @@ function useReveal(threshold = 0.12) {
 }
 
 const forWhom = [
-  { key: "Carrega em silêncio", text: "raiva, cansaço, medo, insegurança — emoções que você aprendeu a engolir porque não havia espaço para sentir." },
+  { key: "Sente dificuldade em se expressar", text: "raiva, cansaço, medo, insegurança — emoções que você aprendeu a engolir porque não havia espaço para sentir." },
   { key: "Relações que ficam na superfície", text: "vínculos que existem, mas sem profundidade real. Falta algo que você não consegue nomear." },
   { key: "Padrões que se repetem", text: "jeitos de reagir, de se fechar, de se perder — que aparecem com pessoas diferentes mas sempre da mesma forma." },
-  { key: "Sente que a masculinidade que aprendeu pesa", text: "e que há outras formas de ser homem, mas ainda não sabe quais são ou como acessá-las." },
+  { key: "Reconhece muita pressão social", text: "em corresponder a expectativas de como é ser homem em diferentes aspectos: sexualidade, paternidade, nos relacionamentos." },
   { key: "Busca pertencimento real", text: "um espaço onde não precise fingir que está bem, que sabe de tudo, que não precisa de nada." },
 ];
 
@@ -109,7 +109,7 @@ const Regenera = () => {
           style={{ opacity: 0, transform: "translateY(20px)", transition: "opacity 0.9s ease, transform 0.9s ease" }}
         >
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream leading-tight max-w-2xl">
-            Um círculo de homens.<br className="hidden md:block" /> Um espaço para ser<br className="hidden md:block" /> inteiro de verdade.
+            Círculo de homens.<br className="hidden md:block" /> Um espaço para ser, refletir<br className="hidden md:block" /> e partilhar sobre os desafios<br className="hidden md:block" /> do que é ser homem na contemporaneidade.
           </h1>
         </div>
 
@@ -130,7 +130,7 @@ const Regenera = () => {
               Para quem é
             </span>
             <h2 className="mt-4 text-2xl md:text-4xl font-serif font-semibold text-foreground leading-snug max-w-2xl">
-              Para o homem que sente que<br className="hidden md:block" /> algo nele quer mudar.
+              Para todas as pessoas que<br className="hidden md:block" /> se identificam enquanto homens.
             </h2>
           </div>
 
@@ -227,9 +227,9 @@ const Regenera = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
               {[
-                { Icon: Users, title: "Encontro", text: "Um grupo mensal de homens, coordenado por Sahaj em Florianópolis — presencial, em círculo, com presença real." },
-                { Icon: Wind, title: "Movimento", text: "Fala, corpo e emoção integrados — para acessar o que a mente ainda não alcança e o coração já sente." },
-                { Icon: Flame, title: "Transformação", text: "Com o tempo, os padrões mudam. A forma de sentir muda. O jeito de se relacionar muda — por dentro primeiro." },
+                { Icon: Users, title: "Encontro", text: "Um grupo mensal de homens coordenado por Sahaj — presencial em Ibiraquera e outro mensal de forma online." },
+                { Icon: Wind, title: "Processo", text: "Partilha e escuta de qualidade serão as bases, alicerçadas por dinâmicas de movimento, bioenergética e reflexões sobre temas relevantes às masculinidades." },
+                { Icon: Flame, title: "Transformação", text: "Aprofundar vínculos verdadeiros, sentir-se mais instrumentalizado aos desafios da contemporaneidade. Reconhecer limites e potências nas masculinidades." },
               ].map(({ Icon, title, text }, i) => (
                 <div
                   key={title}
