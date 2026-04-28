@@ -522,6 +522,9 @@ const Bioescalada = () => {
                 </div>
                 <span className="block w-10 h-px bg-border" />
                 <p className="text-sm font-sans text-muted-foreground leading-relaxed">Atende desde 2006. Mais de 18 anos integrando psicoterapia, bioenergética, terapias corporais e contato com a natureza. Trabalha com o corpo como porta de entrada — pelo movimento, pela respiração, pelo que aparece quando a mente para de comandar.</p>
+                <a href="#" className="text-sm font-sans text-muted-foreground/60 hover:text-foreground transition-colors duration-200">
+                  Me conheça melhor →
+                </a>
               </div>
             </div>
 
@@ -670,7 +673,7 @@ const Bioescalada = () => {
             aria-hidden
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: "center 30%" }}
+            style={{ objectPosition: "40% 30%" }}
           />
         </picture>
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(var(--foreground)) 0%, hsl(var(--foreground)/0.7) 35%, hsl(var(--foreground)/0.1) 70%, transparent 100%)" }} />
