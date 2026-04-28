@@ -8,7 +8,7 @@ const WHATSAPP_URL =
   "https://wa.me/5548991945296?text=Ol%C3%A1%2C%20Sahaj!%20Vi%20seu%20site%20e%20tenho%20interesse%20no%20grupo%20Regenera.";
 
 const heroImg = "https://sahajlandell.com.br/wp-content/uploads/2024/10/20240907_113413-scaled.jpg";
-const ctaImg  = "https://sahajlandell.com.br/wp-content/uploads/2024/10/20240907_113413-scaled.jpg";
+const ctaImg  = "/regen-abraco.jpg";
 
 function useReveal(threshold = 0.12) {
   const ref = useRef<HTMLDivElement>(null);
@@ -99,7 +99,7 @@ const Regenera = () => {
           src={heroImg}
           alt="Regenera — Grupo Terapêutico Masculino"
           className="h-full w-full object-cover"
-          style={{ objectPosition: "center 30%", transformOrigin: "center center", transition: "transform 8s ease-out" }}
+          style={{ objectPosition: "center 30%", transformOrigin: "center center", transition: "transform 8s ease-out", transform: "scaleX(-1)" }}
         />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(var(--foreground)) 0%, hsl(var(--foreground)/0.3) 60%, transparent 100%)" }} />
 
@@ -339,7 +339,7 @@ const Regenera = () => {
           alt=""
           aria-hidden
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 30%" }}
+          style={{ objectPosition: "center 15%" }}
         />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(var(--foreground)) 0%, hsl(var(--foreground)/0.7) 35%, hsl(var(--foreground)/0.1) 70%, transparent 100%)" }} />
 
