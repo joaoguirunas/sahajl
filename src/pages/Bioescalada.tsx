@@ -632,7 +632,7 @@ const Bioescalada = () => {
             className="mt-7 inline-flex items-center gap-2.5 rounded-full bg-primary px-8 py-4 text-sm font-sans font-medium text-primary-foreground transition-shadow hover:shadow-lg active:scale-[0.97]"
           >
             <WhatsAppIcon />
-            Quero saber a próxima data →
+            Me conta quando é a próxima →
           </a>
         </div>
       </section>
