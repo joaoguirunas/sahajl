@@ -13,6 +13,14 @@ const WHATSAPP_DATA_URL =
 const heroImg = "/bioescalada/hero.jpg";
 const ctaImg  = "/bioescalada/cta.jpg";
 
+const galeriaImgs = [
+  { jpg: "/bioescalada/grupo-roda.jpg",  webp: "/bioescalada/grupo-roda.webp",  alt: "Grupo em roda durante vivência Bioescalada", pos: "center 25%" },
+  { jpg: "/bioescalada/galeria-1.jpg",   webp: "/bioescalada/galeria-1.webp",   alt: "Instrução de escalada na rocha",              pos: "center 40%" },
+  { jpg: "/bioescalada/galeria-2.jpg",   webp: "/bioescalada/galeria-2.webp",   alt: "Grupo no costão com mar ao fundo",             pos: "center 30%" },
+  { jpg: "/bioescalada/galeria-3.jpg",   webp: "/bioescalada/galeria-3.webp",   alt: "Grupo em integração após escalada",            pos: "center 35%" },
+  { jpg: "/bioescalada/galeria-4.jpg",   webp: "/bioescalada/galeria-4.webp",   alt: "Grupo em trilha no costão",                   pos: "center 25%" },
+];
+
 function useReveal(threshold = 0.12) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -119,6 +127,12 @@ const Bioescalada = () => {
   const facilitatorsRef = useReveal(0.08);
   const faqRef          = useReveal(0.05);
   const detailsRef      = useReveal(0.08);
+
+  const [galeriaIndex, setGaleriaIndex] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setGaleriaIndex(i => (i + 1) % galeriaImgs.length), 2000);
+    return () => clearInterval(t);
+  }, []);
 
   useEffect(() => {
     const img     = heroRef.current;
@@ -437,19 +451,29 @@ const Bioescalada = () => {
         </div>
       </section>
 
-      {/* ── IMAGEM GRUPO RODA ── */}
-      <div className="w-full overflow-hidden h-[250px] md:h-[450px]">
-        <picture>
-          <source type="image/webp" srcSet="/bioescalada/grupo-roda.webp" />
-          <img
-            src="/bioescalada/grupo-roda.jpg"
-            alt="Grupo em roda durante vivência Bioescalada na natureza"
-            loading="lazy"
-            decoding="async"
-            className="w-full h-full"
-            style={{ objectFit: "cover", objectPosition: "center 25%" }}
-          />
-        </picture>
+      {/* ── GALERIA AUTO ── */}
+      <div className="relative w-full overflow-hidden h-[250px] md:h-[450px]">
+        {galeriaImgs.map((img, i) => (
+          <picture
+            key={img.jpg}
+            className="absolute inset-0 w-full h-full"
+            style={{
+              opacity: galeriaIndex === i ? 1 : 0,
+              transition: "opacity 0.8s ease-in-out",
+              pointerEvents: "none",
+            }}
+          >
+            <source type="image/webp" srcSet={img.webp} />
+            <img
+              src={img.jpg}
+              alt={img.alt}
+              className="w-full h-full"
+              style={{ objectFit: "cover", objectPosition: img.pos }}
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        ))}
       </div>
 
       {/* ── QUOTE ── */}
