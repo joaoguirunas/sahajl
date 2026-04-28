@@ -606,7 +606,6 @@ const Bioescalada = () => {
                 {[
                   { label: "Duração", value: "Dia inteiro" },
                   { label: "Vagas", value: "Limitadas, para manter o grupo acolhedor" },
-                  { label: "Próxima data e local", value: "Abrimos novas turmas ao longo do ano." },
                 ].map((d) => (
                   <div key={d.label} className="flex flex-col gap-1 border-t border-cream/10 py-4">
                     <span className="text-xs font-sans font-medium tracking-[0.15em] uppercase text-cream/40">{d.label}</span>
@@ -614,15 +613,20 @@ const Bioescalada = () => {
                   </div>
                 ))}
               </div>
-              <a
-                href={WHATSAPP_DATA_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center gap-2.5 rounded-full border border-cream/20 px-7 py-3.5 text-sm font-sans font-medium text-cream/80 transition-colors hover:bg-cream/5 active:scale-[0.97]"
-              >
-                <WhatsAppIcon />
-                Quero saber a próxima data →
-              </a>
+              <div className="mt-8 border-t border-cream/10 pt-6 flex flex-col gap-3">
+                <p className="text-xs font-sans font-medium tracking-[0.15em] uppercase text-cream/40">Conheça o Projeto Líquen</p>
+                <p className="text-sm font-sans text-cream/70 leading-relaxed">
+                  A Bioescalada é uma parceria com o Gustavo Mattei, idealizador do Projeto Líquen — vivências de escalada, natureza e autoconhecimento. As próximas datas, locais e inscrições ficam por lá.
+                </p>
+                <a
+                  href="https://www.projetoliquen.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm font-sans text-cream/60 hover:text-cream transition-colors"
+                >
+                  Conhecer o Projeto Líquen →
+                </a>
+              </div>
             </div>
 
             <div>
