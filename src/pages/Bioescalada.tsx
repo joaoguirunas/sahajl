@@ -526,7 +526,7 @@ const Bioescalada = () => {
               className="flex flex-col gap-5 p-8 rounded-2xl"
               style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards" }}
             >
-              <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden">
+              <div className="w-full aspect-[16/9] overflow-hidden" style={{ WebkitMaskImage: "radial-gradient(ellipse 92% 88% at 50% 50%, black 55%, transparent 100%)", maskImage: "radial-gradient(ellipse 92% 88% at 50% 50%, black 55%, transparent 100%)" }}>
                 <picture>
                   <source type="image/webp" srcSet="/bioescalada/facilitador-sahaj.webp" />
                   <img
@@ -557,7 +557,7 @@ const Bioescalada = () => {
               className="flex flex-col gap-5 p-8 rounded-2xl"
               style={{ background: "hsl(var(--cream-dark)/0.4)", opacity: 0, animation: "bio-slide 0.55s ease forwards", animationDelay: "150ms" }}
             >
-              <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden">
+              <div className="w-full aspect-[16/9] overflow-hidden" style={{ WebkitMaskImage: "radial-gradient(ellipse 92% 88% at 50% 50%, black 55%, transparent 100%)", maskImage: "radial-gradient(ellipse 92% 88% at 50% 50%, black 55%, transparent 100%)" }}>
                 <picture>
                   <source type="image/webp" srcSet="/bioescalada/facilitador-gustavo.webp" />
                   <img
