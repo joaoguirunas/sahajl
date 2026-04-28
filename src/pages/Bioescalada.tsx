@@ -656,15 +656,8 @@ const Bioescalada = () => {
         </div>
       </section>
 
-      {/* Wave → foreground (para CTA dark) */}
-      <div className="relative leading-none -mb-px" style={{ background: "hsl(var(--warm-brown))" }}>
-        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-10 md:h-14" style={{ fill: "hsl(var(--foreground))" }}>
-          <path d="M0,35 C480,0 960,60 1440,30 L1440,60 L0,60 Z" />
-        </svg>
-      </div>
-
       {/* ── CTA FINAL ── */}
-      <section className="relative overflow-hidden h-[70vh] md:h-[80vh] bg-foreground">
+      <section className="relative overflow-hidden h-[70vh] md:h-[80vh]">
         <picture>
           <source type="image/webp" srcSet="/bioescalada/cta.webp" />
           <img
@@ -676,7 +669,7 @@ const Bioescalada = () => {
             style={{ objectPosition: "40% 30%" }}
           />
         </picture>
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(var(--foreground)) 0%, hsl(var(--foreground)/0.7) 35%, hsl(var(--foreground)/0.1) 70%, transparent 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsl(var(--warm-brown)) 0%, transparent 25%, hsl(var(--foreground)/0.3) 60%, hsl(var(--foreground)) 100%)" }} />
 
         <div className="absolute bottom-0 left-0 right-0 z-10 px-8 md:px-16 lg:px-24 pb-16 md:pb-20">
           <p className="text-2xl md:text-4xl lg:text-5xl font-serif font-semibold text-cream leading-tight max-w-xl">
