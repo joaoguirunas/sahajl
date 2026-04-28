@@ -444,6 +444,21 @@ const Bioescalada = () => {
         </svg>
       </div>
 
+      {/* ── IMAGEM GRUPO TRILHA ── */}
+      <div className="bg-background w-full overflow-hidden h-[250px] md:h-[450px]">
+        <picture>
+          <source type="image/webp" srcSet="/bioescalada/grupo-trilha.webp" />
+          <img
+            src="/bioescalada/grupo-trilha.jpg"
+            alt="Grupo em trilha na natureza durante a vivência Bioescalada"
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full"
+            style={{ objectFit: "cover", objectPosition: "center 40%" }}
+          />
+        </picture>
+      </div>
+
       {/* ── QUOTE ── */}
       <section className="relative bg-primary py-20 px-8 md:px-16 overflow-hidden">
         <span
