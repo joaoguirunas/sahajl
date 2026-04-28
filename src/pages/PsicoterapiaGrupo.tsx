@@ -31,7 +31,7 @@ const forWhom = [
   { key: "Sente que algo falta nas relações", text: "conexões que existem mas não chegam fundo — e uma saudade de ser realmente visto e encontrado pelo outro." },
   { key: "Vive na cabeça, longe do corpo", text: "emoções que ficam presas, que você sente mas não consegue mover, expressar ou deixar ir." },
   { key: "Carrega padrões que se repetem", text: "nos vínculos, nas formas de se relacionar — e percebe que algo dentro de você ainda não mudou." },
-  { key: "Sente que precisa de presença real", text: "não só de fala, mas de movimento, de contato — de um espaço onde o corpo também possa participar." },
+  { key: "Sente que precisa de vínculos verdadeiros", text: "não só de fala, mas de movimento, de contato — de um espaço onde o corpo também possa participar." },
   { key: "Busca pertencimento e comunidade", text: "um lugar onde crescer junto com outros, onde a história de cada um ilumina a do outro." },
 ];
 
@@ -134,7 +134,7 @@ const PsicoterapiaGrupo = () => {
               Para quem é
             </span>
             <h2 className="mt-4 text-2xl md:text-4xl font-serif font-semibold text-foreground leading-snug max-w-2xl">
-              Para quem sente que algumas<br className="hidden md:block" /> coisas só se curam no encontro.
+              Para quem sente que a vida<br className="hidden md:block" /> acontece nos encontros.
             </h2>
           </div>
 
@@ -183,7 +183,7 @@ const PsicoterapiaGrupo = () => {
               <span className="block w-8 h-px bg-cream/30" />
             </span>
             <h2 className="mt-5 text-3xl md:text-5xl font-serif font-semibold text-cream leading-snug">
-              O corpo move o que<br className="hidden md:block" /> a fala ainda não alcança.
+              A dança, o movimento, o encontro e a arte como possibilidade de autoconhecimento e transformação.
             </h2>
           </div>
 
@@ -227,7 +227,7 @@ const PsicoterapiaGrupo = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
               {[
-                { Icon: Users, title: "Encontro", text: "Um grupo regular que se reúne com intenção — cada sessão é um convite para estar presente de verdade." },
+                { Icon: Users, title: "Encontro", text: "Um grupo regular que se reúne com intenção de trazer a presença pro agora e para o corpo." },
                 { Icon: Wind, title: "Movimento", text: "Corpo, emoção e relação integrados através de práticas que abrem o que estava fechado e movem o que estava parado." },
                 { Icon: Flame, title: "Transformação", text: "Com o tempo, os padrões mudam. A forma de se relacionar muda. A espontaneidade volta a pulsar." },
               ].map(({ Icon, title, text }, i) => (
