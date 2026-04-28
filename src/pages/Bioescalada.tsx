@@ -447,7 +447,7 @@ const Bioescalada = () => {
             loading="lazy"
             decoding="async"
             className="w-full h-full"
-            style={{ objectFit: "cover", objectPosition: "center center" }}
+            style={{ objectFit: "cover", objectPosition: "center 25%" }}
           />
         </picture>
       </div>
