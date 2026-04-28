@@ -8,7 +8,7 @@ const WHATSAPP_URL =
   "https://wa.me/5548991945296?text=Ol%C3%A1%2C%20Sahaj!%20Vi%20seu%20site%20e%20tenho%20interesse%20no%20grupo%20Despertar%20do%20Movimento.";
 
 const heroImg = "/despertar-hero.jpg";
-const ctaImg  = "https://sahajlandell.com.br/wp-content/uploads/2024/12/DSC03113-scaled.jpg";
+const ctaImg  = "/despertar-cta.jpg";
 
 function useReveal(threshold = 0.12) {
   const ref = useRef<HTMLDivElement>(null);
